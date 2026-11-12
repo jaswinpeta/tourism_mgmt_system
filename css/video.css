@@ -1,0 +1,40 @@
+
+    /* Video Banner Styling */
+    .video-banner {
+        position: relative;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+
+    .video-banner video {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+    }
+
+    /* Positioning of the heading on the video */
+    .video-banner h1 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 3em;
+        color: #fff;
+        text-align: center;
+        z-index: 2;
+        font-family: 'Oswald', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    }
+
+    /* Ensure the video is responsive and covers the area */
+    @media (max-width: 768px) {
+        .video-banner h1 {
+            font-size: 2em;
+        }
+    }
+
+    /* Add padding and responsive layout */
+    .container {
+        padding: 30px 0;
+    }
